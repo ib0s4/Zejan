@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
+import {AppRoutingModule} from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -19,6 +20,7 @@ import { SearcherComponent } from './components/searcher/searcher.component';
 import { StepDetailedComponent } from './components/step-detailed/step-detailed.component';
 import { StepListComponent } from './components/step-list/step-list.component';
 import { StepFormComponent } from './components/step-form/step-form.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -37,13 +39,15 @@ import { StepFormComponent } from './components/step-form/step-form.component';
     SearcherComponent,
     StepDetailedComponent,
     StepListComponent,
-    StepFormComponent
+    StepFormComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
