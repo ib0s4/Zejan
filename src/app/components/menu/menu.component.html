@@ -1,0 +1,30 @@
+<button md-icon-button [mdMenuTriggerFor]="menu">
+  <md-icon>menu</md-icon>
+</button>
+<md-menu #menu="mdMenu">
+  <form class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search">
+    </div>
+  </form>
+  <button md-menu-item>
+    <span>Today</span>
+    <md-icon>alarm</md-icon>
+  </button>
+  <button md-menu-item>
+    <span>Next {{nDays}} days</span>
+    <md-icon>view_week</md-icon>
+  </button>
+  <button md-menu-item>
+    <span>Recipes</span>
+    <md-icon>local_dining</md-icon>
+  </button>
+  <button md-menu-item>
+    <span>Store</span>
+    <md-icon>shopping_cart</md-icon>
+  </button>
+  <button md-menu-item disabled>
+    <span>Settings</span>
+    <md-icon>settings</md-icon>
+  </button>
+</md-menu>
